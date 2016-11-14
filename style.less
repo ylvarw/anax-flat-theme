@@ -4,6 +4,19 @@
 @import url(modules.less);
 
 
+/** ----------------------------
+* Body
+*/
+
+body {
+	background-color: #e6f9ff;
+}
+
+p {
+    text-align: left;
+}
+
+
 
 /** ----------------------
  *  Logo images
@@ -34,10 +47,16 @@
 
 // Style navbar
 .rm-desktop li {
-    background-color: #096;
+	position: relative;
+	top: 1em;
+    background-color: #b3c6ff;
+    border: 1px;
+    border-style: solid;
+    border-color: #009933;
+    border-radius: 10%;
 }
 
-@navbarItemBgColor: #096;
+@navbarItemBgColor: #b3c6ff;
 
 
 // Size each item in the header
@@ -46,11 +65,11 @@
 .profile {
     float: left;
     width: 30%;
-    border-radius: 10%;
 }
 
 .site-header {
     height: 80px;
+    background-color: #e6f9ff;
 }
 
 // Site title

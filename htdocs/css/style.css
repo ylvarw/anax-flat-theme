@@ -571,7 +571,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Menu layout for the desktop variant, usually full width of browser.
  */
 .rm-desktop ul {
-  background-color: #096;
+  background-color: #b3c6ff;
 }
 .rm-desktop li {
   position: relative;
@@ -582,7 +582,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li a {
   color: inherit;
-  background-color: #096;
+  background-color: #b3c6ff;
 }
 .rm-desktop li a:hover {
   color: inherit;
@@ -708,6 +708,15 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max.rm-swipe-right .rm-mobile {
   right: 0;
 }
+/** ----------------------------
+* Body
+*/
+body {
+  background-color: #e6f9ff;
+}
+p {
+  text-align: left;
+}
 /** ----------------------
  *  Logo images
  */
@@ -726,17 +735,23 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   font-size: 2em;
 }
 .rm-desktop li {
-  background-color: #096;
+  position: relative;
+  top: 1em;
+  background-color: #b3c6ff;
+  border: 1px;
+  border-style: solid;
+  border-color: #009933;
+  border-radius: 10%;
 }
 .site-logo-text,
 .navbar2,
 .profile {
   float: left;
   width: 30%;
-  border-radius: 10%;
 }
 .site-header {
   height: 80px;
+  background-color: #e6f9ff;
 }
 .site-logo-text {
   font-size: 2em;
