@@ -141,3 +141,29 @@ npm-version:
 	@$(call HELPTEXT,$@)
 	$(NPMBIN)/lessc --version
 	$(NPMBIN)/csslint --version
+
+
+# target: upgrade-normalize       - Upgrade LESS module - Normalize.
+.PHONY: upgrade-normalize
+upgrade-normalize:
+	@$(call HELPTEXT,$@)
+	
+	# Normalizer
+	wget --quiet https://necolas.github.io/normalize.css/latest/normalize.css -O $(LESS_MODULES)/normalize.less
+
+
+
+# target: upgrade-responsive-menu       - Upgrade LESS module - responsive-menu.
+.PHONY: upgrade-responsive-menu
+upgrade-responsive-menu:
+	@$(call HELPTEXT,$@)
+
+	# responsive-menu
+	wget --quiet https://raw.githubusercontent.com/mosbth/responsive-menu/master/src/less/responsive-menu.less -O modules/responsive-menu.less
+	wget --quiet https://raw.githubusercontent.com/mosbth/responsive-menu/master/src/js/responsive-menu.js -O js/responsive-menu.js
+
+
+# target: upgrade                 - Upgrade external LESS modules.
+.PHONY: upgrade
+upgrade: upgrade-normalize upgrade-responsive-menu
+	@$(call HELPTEXT,$@)
