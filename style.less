@@ -2,6 +2,7 @@
 * Anax Flat theme.
 */
 @import url(modules.less);
+@import url(grid-helpers.less);
 
 
 /** ----------------------------
@@ -64,7 +65,7 @@ p {
 .navbar2,
 .profile {
     float: left;
-    width: 30%;
+    // width: 30%;
 }
 
 .site-header {
@@ -80,13 +81,29 @@ p {
         text-decoration: none;
     }
 }
+img {
+    max-width: 100%;
+}
+
+.route-grid {
+    .showgrid(960px);
+    font-family: Courier;
+
+}
+.route-typography {
+    background: url("../../htdocs/img/horisontal-grid-24.png");
+    background-repeat: repeat;
+    
+    font-family: @fontFamilyHelveticaNeue;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: @fontFamilyHelveticaNeue;
+}
+}
+
 
 /** --------------------
 * responsive design
 */
-img {
-    max-width: 100%;
-}
 
 @media screen and (max-width: 900px) {
     .site-logo-text {
